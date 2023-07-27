@@ -1,4 +1,4 @@
-import type { UseFetchOptions } from "nuxt/app";
+import { useFetch, useRuntimeConfig, type UseFetchOptions } from "nuxt/app";
 
 export function useAPI<T = unknown>(
   url: string,

@@ -1,5 +1,8 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
+  imports: {
+    autoImport: false,
+  },
   devtools: { enabled: true },
   app: {
     head: {
@@ -34,7 +37,4 @@ export default defineNuxtConfig({
     },
   },
   css: ["@/assets/main.css"],
-  components: {
-    dirs: ["@/components/article", "@/components"],
-  },
 });
