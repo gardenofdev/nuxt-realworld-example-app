@@ -1,0 +1,4 @@
+<template>
+  <ArticlePreview />
+  <ArticlePagination />
+</template>

@@ -34,4 +34,7 @@ export default defineNuxtConfig({
     },
   },
   css: ["@/assets/main.css"],
+  components: {
+    dirs: ["@/components/article"],
+  },
 });
