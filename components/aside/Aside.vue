@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { getPopularTags } from "@/api/tags";
+import { getPopularTags } from "@/api";
 
 const { data } = await getPopularTags();
 </script>

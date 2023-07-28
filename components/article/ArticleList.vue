@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { getArticles } from "@/api/articles";
+import { getArticles } from "@/api";
 
 import ArticlePreview from "./ArticlePreview.vue";
 import ArticlePagination from "./ArticlePagination.vue";
