@@ -8,14 +8,14 @@ const { data } = await getPopularTags();
     <p>Popular Tags</p>
 
     <div class="tag-list" v-if="data && data.tags">
-      <a
-        :href="`/tag/${item}`"
+      <NuxtLink
+        :to="`/tag/${item}`"
         class="tag-pill tag-default"
         v-for="(item, index) in data.tags"
         :key="index"
       >
         {{ item }}
-      </a>
+      </NuxtLink>
     </div>
   </div>
 </template>

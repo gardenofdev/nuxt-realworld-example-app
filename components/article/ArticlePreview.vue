@@ -6,20 +6,23 @@ const props = defineProps<{ article: Article }>();
 <template>
   <div class="article-preview">
     <div class="article-meta">
-      <a :href="`/profile/${props.article.author.username}`">
+      <NuxtLink :to="`/profile/${props.article.author.username}`">
         <img :src="props.article.author.image" />
-      </a>
+      </NuxtLink>
       <div class="info">
-        <a :href="`/profile/${props.article.author.username}`" class="author">
+        <NuxtLink
+          :to="`/profile/${props.article.author.username}`"
+          class="author"
+        >
           {{ props.article.author.username }}
-        </a>
+        </NuxtLink>
         <span class="date">{{ props.article.updatedAt }}</span>
       </div>
       <button class="btn btn-outline-primary btn-sm pull-xs-right">
         <i class="ion-heart"></i> {{ props.article.favoritesCount }}
       </button>
     </div>
-    <a href="/article/how-to-build-webapps-that-scale" class="preview-link">
+    <NuxtLink :to="`/article/${props.article.slug}`" class="preview-link">
       <h1>{{ props.article.title }}</h1>
       <p>{{ props.article.description }}</p>
       <span>Read more...</span>
@@ -31,6 +34,6 @@ const props = defineProps<{ article: Article }>();
           {{ tag }}
         </li>
       </ul>
-    </a>
+    </NuxtLink>
   </div>
 </template>

@@ -1,16 +1,16 @@
 <template>
   <nav class="navbar navbar-light">
     <div class="container">
-      <a class="navbar-brand" href="/">conduit</a>
+      <NuxtLink to="/" class="navbar-brand"> conduit </NuxtLink>
       <ul class="nav navbar-nav pull-xs-right">
         <li class="nav-item">
-          <a class="nav-link active" href="/">Home</a>
+          <NuxtLink class="nav-link active" to="/"> Home </NuxtLink>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="/login">Sign in</a>
+          <NuxtLink class="nav-link" to="/login"> Sign in </NuxtLink>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="/register">Sign up</a>
+          <NuxtLink class="nav-link" to="/register"> Sign up </NuxtLink>
         </li>
       </ul>
     </div>
