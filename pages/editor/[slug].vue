@@ -14,31 +14,31 @@
                   type="text"
                   class="form-control form-control-lg"
                   placeholder="Article Title"
-                />
+                >
               </fieldset>
               <fieldset class="form-group">
                 <input
                   type="text"
                   class="form-control"
                   placeholder="What's this article about?"
-                />
+                >
               </fieldset>
               <fieldset class="form-group">
                 <textarea
                   class="form-control"
                   rows="8"
                   placeholder="Write your article (in markdown)"
-                ></textarea>
+                />
               </fieldset>
               <fieldset class="form-group">
                 <input
                   type="text"
                   class="form-control"
                   placeholder="Enter tags"
-                />
+                >
                 <div class="tag-list">
                   <span class="tag-default tag-pill">
-                    <i class="ion-close-round"></i> tag
+                    <i class="ion-close-round" /> tag
                   </span>
                 </div>
               </fieldset>

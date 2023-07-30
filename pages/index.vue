@@ -1,12 +1,15 @@
 <script setup lang="ts">
-import ArticleList from "@/components/article/ArticleList.vue";
-import Aside from "@/components/aside/Aside.vue";
+import ArticleList from '@/components/article/ArticleList.vue'
+import Aside from '@/components/aside/Aside.vue'
 </script>
+
 <template>
   <div class="home-page">
     <div class="banner">
       <div class="container">
-        <h1 class="logo-font">conduit</h1>
+        <h1 class="logo-font">
+          conduit
+        </h1>
         <p>A place to share your knowledge.</p>
       </div>
     </div>

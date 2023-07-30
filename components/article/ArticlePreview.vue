@@ -1,13 +1,14 @@
 <script setup lang="ts">
-import type { Article } from "@/types";
+import type { Article } from '@/types'
 
-const props = defineProps<{ article: Article }>();
+const props = defineProps<{ article: Article }>()
 </script>
+
 <template>
   <div class="article-preview">
     <div class="article-meta">
       <NuxtLink :to="`/profile/${props.article.author.username}`">
-        <img :src="props.article.author.image" />
+        <img :src="props.article.author.image">
       </NuxtLink>
       <div class="info">
         <NuxtLink
@@ -19,7 +20,7 @@ const props = defineProps<{ article: Article }>();
         <span class="date">{{ props.article.updatedAt }}</span>
       </div>
       <button class="btn btn-outline-primary btn-sm pull-xs-right">
-        <i class="ion-heart"></i> {{ props.article.favoritesCount }}
+        <i class="ion-heart" /> {{ props.article.favoritesCount }}
       </button>
     </div>
     <NuxtLink :to="`/article/${props.article.slug}`" class="preview-link">
@@ -28,8 +29,9 @@ const props = defineProps<{ article: Article }>();
       <span>Read more...</span>
       <ul class="tag-list">
         <li
-          class="tag-default tag-pill tag-outline"
           v-for="tag of props.article.tagList"
+          :key="tag"
+          class="tag-default tag-pill tag-outline"
         >
           {{ tag }}
         </li>

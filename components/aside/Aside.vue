@@ -1,18 +1,19 @@
 <script setup lang="ts">
-import { getPopularTags } from "@/api";
+import { getPopularTags } from '@/api'
 
-const { data } = await getPopularTags();
+const { data } = await getPopularTags()
 </script>
+
 <template>
   <div class="sidebar">
     <p>Popular Tags</p>
 
-    <div class="tag-list" v-if="data && data.tags">
+    <div v-if="data && data.tags" class="tag-list">
       <NuxtLink
-        :to="`/tag/${item}`"
-        class="tag-pill tag-default"
         v-for="(item, index) in data.tags"
         :key="index"
+        :to="`/tag/${item}`"
+        class="tag-pill tag-default"
       >
         {{ item }}
       </NuxtLink>

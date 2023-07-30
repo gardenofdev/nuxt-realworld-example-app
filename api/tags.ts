@@ -1,5 +1,5 @@
-import { useAPI } from "@/composables/useAPI";
+import { useAPI } from '@/composables/useAPI'
 
-export const getPopularTags = () => {
-  return useAPI<{ tags: string[] }>("/tags");
-};
+export function getPopularTags() {
+  return useAPI<{ tags: string[] }>('/tags')
+}
