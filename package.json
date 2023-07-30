@@ -7,13 +7,17 @@
     "generate": "nuxt generate",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
-    "test": "vitest run"
+    "test": "vitest run",
+    "lint": "eslint ."
   },
   "devDependencies": {
+    "@antfu/eslint-config": "^0.39.8",
     "@nuxt/devtools": "latest",
     "@nuxt/test-utils": "^3.6.5",
     "@types/node": "^18.17.0",
+    "eslint": "^8.46.0",
     "nuxt": "^3.6.5",
+    "typescript": "^5.1.6",
     "vite": "^4.4.4",
     "vitest": "^0.33.0",
     "vue": "^3.3.4"
